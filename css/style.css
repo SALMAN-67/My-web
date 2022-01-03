@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background: #000;
+    color: #fff;
+    position: relative;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+.logo{
+    text-decoration: none;
+    color: #fff;
+    font-size: 32px;
+    padding-top: 10px;
+    padding-left: 6%;
+    font-weight: bold;
+    
+}
+
+.nav_links{
+    text-align: right;
+    background: #ff1616;
+    padding: 10px 30px;
+    border-bottom-left-radius: 18px;
+}
+
+.nav_links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 30px;
+    position: relative;
+}
+.nav_links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+
+}
+
+
+.nav_links ul li::after{
+    content: "";
+    height: 4px;
+    width: 0%;
+    position: absolute;
+    left: 0;
+    background: rgba(238, 237, 237, 0.842);
+    bottom: 2px;
+    transition: 0.5s;
+    border-radius: 30%;
+}
+.nav_links ul li:hover::after{
+    width: 100%;
+}
+.left-sidebar{
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #ff1616;
+}
+
+.row{
+    padding: 0 10%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 5%;
+
+}
+
+.left-col{
+    flex-basis: 40%;
+
+}
+
+.right-col{
+    flex-basis: 55%;
+}
+
+.left-col img{
+    width: 80%;
+    cursor: pointer;
+    border-radius: 6%;
+    filter: grayscale(0);
+    transition: flitter 1s;
+}
+
+.left-col img:hover{
+    filter: grayscale(1);
+}
+
+.right-col  h1{
+    font-size: 55px;
+    font-weight: 600;
+}
+
+.right-col p{
+    color: #777;
+    margin: 20px 0 70px;
+}
+
+.social-media{
+    display: flex;
+    margin-top: 30px;
+
+}
+
+.icon{
+    width: 100px;
+    height: 100px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    transition: transform 0.5s;
+}
+
+.icon img{
+    width: 30px;
+}
+
+.icon a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ff1616;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.icon a:hover{
+    opacity: 1;
+}
+
+.icon:hover{
+    transform: translateY(-5px);
+}
